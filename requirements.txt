@@ -1,0 +1,27 @@
+
+# Core numerical computing
+numpy
+scipy
+pandas
+
+# Plotting and visualization
+matplotlib
+seaborn
+plotly
+
+# Control systems and signal processing
+control
+
+# Symbolic mathematics
+sympy
+
+# Data handling
+h5py
+openpyxl
+
+# Jupyter notebooks
+jupyter
+ipykernel
+
+# Utilities
+tqdm
