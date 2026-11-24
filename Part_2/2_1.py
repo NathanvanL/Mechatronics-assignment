@@ -7,8 +7,14 @@ from scipy import signal
 data = pd.read_csv("MSD2026_Plant_Coefficients.csv")
 
 #numerator and denominator from plant coefficients
+
 num = data["numerator"].to_numpy(dtype=float)
 den = data["denominator"].to_numpy(dtype=float)
+
+num = num / den[0]
+den = den / den[0]
+num = np.trim_zeros(num, 'f')
+
 
 #Input delay and sample time extraction
 Td = data["input_delay_s"].iloc[0]
