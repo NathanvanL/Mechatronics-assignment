@@ -10,9 +10,8 @@ data = pd.read_csv("MSD2026_Plant_Coefficients.csv")
 num = data["numerator"].to_numpy(dtype=float)
 den = data["denominator"].to_numpy(dtype=float)
 
+#Input delay and sample time extraction
 Td = data["input_delay_s"].iloc[0]
-
-# Extract sample time
 Ts = data["sample_time_s"].iloc[0]
 
 #transferfunction
